@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tekin | Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="../script.js"></script>
+</head>
+<body>
+  <button id="mode-toggle"><i class="fas fa-moon"></i></button>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="../images/MT_logo.png" alt="Logo" class="logo-img">
+      </div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="language-selector">
+        <div class="flags">
+          <img src="../images/turkey-flag.png" alt="Türkçe" class="flag" onclick="window.location.href='../index.html'">
+          <img src="../images/uk-flag.png" alt="English" class="flag" onclick="window.location.href='index.html'">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hello, I’m Tekin 👋</h1>
+        <p>I’m a Computer Engineering student. I love coding and creating things.</p>
+        <a href="#projects" class="btn">See my projects</a>
+      </div>
+      <lottie-player
+        src="https://assets9.lottiefiles.com/packages/lf20_kkflmtur.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay>
+      </lottie-player>
+    </div>
+  </section>
+
+  <section id="about" class="glass-card">
+    <h2>About Me</h2>
+    <p>I’m learning HTML, CSS, and JavaScript. I’m practicing what I’ve learned on this site. I love web design and animations.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card glass-card">
+        <img src="calculator.png" alt="Calculator">
+        <h3>🧮 Calculator</h3>
+        <p>A simple calculator with 4 operations created with HTML, CSS, and JavaScript.</p>
+        <a href="#" class="btn-small">Demo</a>
+        <a href="#" class="btn-small">Code</a>
+      </div>
+      <div class="project-card glass-card">
+        <img src="game.png" alt="Game">
+        <h3>🎮 Guessing Game</h3>
+        <p>A fun game where you need to guess a random number, created with JavaScript.</p>
+        <a href="#" class="btn-small">Demo</a>
+        <a href="#" class="btn-small">Code</a>
+      </div>
+      <div class="project-card glass-card">
+        <img src="todo.png" alt="To-do App">
+        <h3>📝 To-do List</h3>
+        <p>A task management app where you can add, delete, and mark tasks as done.</p>
+        <a href="#" class="btn-small">Demo</a>
+        <a href="#" class="btn-small">Code</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="glass-card">
+    <h2>My Skills</h2>
+    <div class="skill">
+      <p>HTML</p>
+      <div class="progress"><div class="bar" style="width: 90%"></div></div>
+    </div>
+    <div class="skill">
+      <p>CSS</p>
+      <div class="progress"><div class="bar" style="width: 75%"></div></div>
+    </div>
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="progress"><div class="bar" style="width: 65%"></div></div>
+    </div>
+  </section>
+
+  <section id="contact" class="glass-card">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <button id="toTop"><i class="fas fa-arrow-up"></i></button>
+
+  <footer>
+    <p>© 2025 Tekin. All rights reserved</p>
+  </footer>
+
+</body>
+</html>

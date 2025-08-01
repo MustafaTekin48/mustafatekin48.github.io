@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa Tekin | Kişisel Web Sitesi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="mode-toggle"><i class="fas fa-moon"></i></button>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/MT_logo.png" alt="Logo" class="logo-img" />
+      </div>
+      <ul>
+        <li><a href="#hero">Ana Sayfa</a></li>
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#projects">Projelerim</a></li>
+        <li><a href="#skills">Becerilerim</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+      <div class="language-selector">
+        <div class="flags">
+          <img src="images/turkey-flag.png" alt="Türkçe" class="flag" onclick="window.location.href='index.html'" />
+          <img src="images/uk-flag.png" alt="English" class="flag" onclick="window.location.href='en/index.html'" />
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Merhaba, ben Mustafa Tekin 👋</h1>
+        <p>Bilgisayar Mühendisi | Yazılım Geliştirici | Siber Güvenlik Meraklısı</p>
+        <a href="#projects" class="btn">Projelerimi Gör</a>
+      </div>
+      <lottie-player
+        src="https://assets9.lottiefiles.com/packages/lf20_kkflmtur.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay>
+      </lottie-player>
+    </div>
+  </section>
+
+  <section id="about" class="glass-card about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2><i class="fas fa-user-circle"></i> Hakkımda</h2>
+        <p><i class="fas fa-graduation-cap"></i> <strong>Mustafa Tekin</strong>, Türk Hava Kurumu Üniversitesi Bilgisayar Mühendisliği mezunuyum.</p>
+        <p><i class="fas fa-code"></i> Yazılım geliştirme, <strong>siber güvenlik</strong> 🔐 ve <strong>veri analizi</strong> 📊 alanlarına ilgi duyuyorum.</p>
+        <p><i class="fas fa-tools"></i> Python 🐍, Java ☕, HTML/CSS ve JavaScript 🚀 ile projeler geliştirdim.</p>
+        <p><i class="fas fa-network-wired"></i> Wireshark ve Scapy ile ağ trafiği analizleri üzerine çalıştım.</p>
+        <p><i class="fas fa-cat"></i> İki kedim 🐱 ile birlikte yaşıyorum; <i class="fas fa-coffee"></i> kahve eşliğinde kod yazmak favorim!</p>
+      </div>
+      <div class="about-image">
+        <img src="images/about-me.png" alt="Mustafa Tekin" />
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projelerim</h2>
+    <div class="project-grid">
+      <div class="project-card glass-card">
+        <img src="images/network.png" alt="Network Analysis" />
+        <h3>🌐 Network Traffic Analysis</h3>
+        <p>Ağ trafiğini analiz ederek anormal davranışları tespit eden bir sistem. Python, Scapy ve Wireshark kullanıldı.</p>
+        <a href="#" class="btn-small">Detaylar</a>
+        <a href="https://github.com/MustafaTekin48/network-analyzer" class="btn-small" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card glass-card">
+        <img src="images/cyber.png" alt="CyberSecurity Lab" />
+        <h3>🛡️ Cyber Security Mini Lab</h3>
+        <p>Temel ağ saldırıları (ARP Spoofing, Port Scanning) simülasyonu. Kali Linux + Python ile geliştirilmiştir.</p>
+        <a href="#" class="btn-small">Detaylar</a>
+        <a href="#" class="btn-small">Sunum</a>
+      </div>
+      <div class="project-card glass-card">
+        <img src="images/sqlapp.png" alt="SQL Project" />
+        <h3>💾 Veritabanı Uygulaması</h3>
+        <p>MySQL ile geliştirilmiş, kullanıcı giriş yönetimi ve veri sorgulama işlevlerine sahip masaüstü uygulama.</p>
+        <a href="#" class="btn-small">Detaylar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="glass-card">
+    <h2><i class="fas fa-tools"></i> Becerilerim & İletişim</h2>
+    <div class="dual-section">
+      <div class="skills-block">
+        <h3><i class="fas fa-code"></i> Teknik Yetenekler</h3>
+        <ul class="skills-list">
+          <li><i class="fab fa-python"></i> Python</li>
+          <li><i class="fab fa-java"></i> Java</li>
+          <li><i class="fab fa-html5"></i> HTML</li>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fab fa-js-square"></i> JavaScript</li>
+          <li><i class="fas fa-network-wired"></i> Wireshark & Scapy</li>
+          <li><i class="fas fa-database"></i> SQL</li>
+        </ul>
+      </div>
+
+      <div class="contact-block">
+        <h3><i class="fas fa-envelope"></i> İletişim</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Adınız" required />
+          <input type="email" placeholder="E-posta adresiniz" required />
+          <textarea placeholder="Mesajınız..." required></textarea>
+          <button type="submit">Gönder</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <button id="toTop"><i class="fas fa-arrow-up"></i></button>
+
+<footer class="site-footer">
+  <div class="footer-social-horizontal">
+    <a href="mailto:mustafa.tekin2000@icloud.com">
+      <i class="fas fa-envelope"></i>
+      <span>mustafa.tekin2000@icloud.com</span>
+    </a>
+    <a href="https://www.linkedin.com/in/mustafatekinn" target="_blank">
+      <i class="fab fa-linkedin"></i>
+      <span>/mustafatekinn</span>
+    </a>
+    <a href="https://github.com/MustafaTekin48" target="_blank">
+      <i class="fab fa-github"></i>
+      <span>/MustafaTekin48</span>
+    </a>
+  </div>
+  <p>© 2025 Mustafa Tekin. Tüm hakları saklıdır</p>
+</footer>
+
+
+
+</body>
+</html>
