@@ -7,20 +7,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="mode-toggle"><i class="fas fa-moon"></i></button>
 
   <header>
     <nav>
       <div class="logo">
-        <img src="images/MT_logo.png" alt="Logo" class="logo-img" />
+        <a href="index.html">
+          <img src="images/MT_logo.png" alt="Logo" class="logo-img" />
+        </a>
       </div>
-      <ul>
+
+       <button class="hamburger" id="hamburger-btn">☰</button>
+      
+       <ul id="main-menu">
         <li><a href="#hero">Ana Sayfa</a></li>
         <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#experience">Deneyimler</a></li>
         <li><a href="#projects">Projelerim</a></li>
+        <li><a href="#websites">Web Siteleri</a></li>
         <li><a href="#skills">Becerilerim</a></li>
         <li><a href="#contact">İletişim</a></li>
       </ul>
@@ -34,114 +44,306 @@
   </header>
 
   <section id="hero">
+    <div id="particles-js"></div>
     <div class="hero-content">
-      <div class="hero-text">
-        <h1>Merhaba, ben Mustafa Tekin 👋</h1>
-        <p>Bilgisayar Mühendisi | Yazılım Geliştirici | Siber Güvenlik Meraklısı</p>
-        <a href="#projects" class="btn">Projelerimi Gör</a>
-      </div>
-      <lottie-player
-        src="https://assets9.lottiefiles.com/packages/lf20_kkflmtur.json"
-        background="transparent"
-        speed="1"
-        style="width: 300px; height: 300px"
-        loop
-        autoplay>
-      </lottie-player>
-    </div>
-  </section>
 
-  <section id="about" class="glass-card about-section">
-    <div class="about-container">
-      <div class="about-text">
-        <h2><i class="fas fa-user-circle"></i> Hakkımda</h2>
-        <p><i class="fas fa-graduation-cap"></i> <strong>Mustafa Tekin</strong>, Türk Hava Kurumu Üniversitesi Bilgisayar Mühendisliği mezunuyum.</p>
-        <p><i class="fas fa-code"></i> Yazılım geliştirme, <strong>siber güvenlik</strong> 🔐 ve <strong>veri analizi</strong> 📊 alanlarına ilgi duyuyorum.</p>
-        <p><i class="fas fa-tools"></i> Python 🐍, Java ☕, HTML/CSS ve JavaScript 🚀 ile projeler geliştirdim.</p>
-        <p><i class="fas fa-network-wired"></i> Wireshark ve Scapy ile ağ trafiği analizleri üzerine çalıştım.</p>
-        <p><i class="fas fa-cat"></i> İki kedim 🐱 ile birlikte yaşıyorum; <i class="fas fa-coffee"></i> kahve eşliğinde kod yazmak favorim!</p>
+      <div class="hero-text">
+  <h1>Merhaba, Ben Mustafa Tekin 👋</h1>
+  <p>Bilgisayar Mühendisi | Yazılım Geliştirici | ERP Sorumlusu</p>
+    
+    <div class="hero-social-and-buttons">
+    <!-- Sosyal ikonlar -->
+    <div class="social-icons">
+      <a href="mailto:mustafa.tekin2000@icloud.com" target="_blank" title="E-mail">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mustafatekinn" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/MustafaTekin48" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <!-- CV Butonları -->
+    <div class="cv-buttons">
+      <a href="#projects" class="btn">Projelerimi Görüntüle</a>
+      <a href="../assets/MustafaTekintürkçe.pdf" target="_blank" class="btn">CV'yi görüntüle</a>
+      <a href="../assets/MustafaTekintürkçe.pdf" download class="btn">CV'yi indir</a>
+    </div>
+  </div>
+</div>
+    <!-- SAĞ: Animasyon -->
+    <lottie-player
+      src="https://assets9.lottiefiles.com/packages/lf20_kkflmtur.json"
+      background="transparent"
+      speed="1"
+      style="width: 400px; height: 400px"
+      loop
+      autoplay>
+    </lottie-player>
+
+  </div>
+</section>
+
+<section id="about" class="glass-card about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h2><i class="fas fa-user-circle"></i> Hakkımda</h2>
+      <p><i class="fas fa-user"></i> <strong>Mustafa Tekin</strong>, 17.02.2000 tarihinde Muğla’da doğdum.</p>
+      <p><i class="fas fa-school"></i> Lise eğitimimi Milas Final Temel Lisesi'nde tamamladım.</p>
+      <p><i class="fas fa-graduation-cap"></i> Türk Hava Kurumu Üniversitesi Bilgisayar Mühendisliği mezunuyum.</p>
+      <p><i class="fas fa-laptop-code"></i> Web siteleri ve mobil uygulama geliştirme konularına ilgi duyuyorum.</p>
+      <p><i class="fas fa-shield-alt"></i> Siber güvenlik hakkında bilgi sahibiyim ve boş zamanlarımda bu alanda çalışmalar yapıyorum.</p>
+    </div>
+    <div class="about-image">
+      <img src="images/about-me.png" alt="Mustafa Tekin" />
+    </div>
+  </div>
+</section>
+
+  <section id="experience">
+    <div id="experience-particles"></div> 
+    <h2 class="section-title">Deneyimlerim</h2>
+    <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <h3>Yeniköy Kemerköy Elektrik Üretim A.Ş</h3>
+        <p>BT Stajyeri</p>
+        <a href="https://ykenerji.com.tr/" target="_blank">ykenerji.com.tr</a>
       </div>
-      <div class="about-image">
-        <img src="images/about-me.png" alt="Mustafa Tekin" />
+      <div class="timeline-middle"></div>
+      <div class="timeline-right">
+        <p>Temmuz - Ağustos 2022</p>
       </div>
     </div>
-  </section>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <h3>Lenora Bilişim Sistemleri</h3>
+        <p>Yazılım Stajyeri</p>
+        <a href="https://lenorabilisim.com/" target="_blank">lenorabilisim.com</a>
+      </div>
+      <div class="timeline-middle"></div>
+      <div class="timeline-right">
+        <p>Haziran - Temmuz 2023</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <h3>Tersan Marine</h3>
+        <p>ERP Sorumlusu</p>
+        <a href="https://tersanmarine.com/tr" target="_blank">tersanmarine.com/tr</a>
+      </div>
+      <div class="timeline-middle"></div>
+      <div class="timeline-right">
+        <p>Haziran 2025 - Devam Ediyor</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <section id="projects">
     <h2>Projelerim</h2>
     <div class="project-grid">
       <div class="project-card glass-card">
-        <img src="images/network.png" alt="Network Analysis" />
-        <h3>🌐 Network Traffic Analysis</h3>
-        <p>Ağ trafiğini analiz ederek anormal davranışları tespit eden bir sistem. Python, Scapy ve Wireshark kullanıldı.</p>
-        <a href="#" class="btn-small">Detaylar</a>
-        <a href="https://github.com/MustafaTekin48/network-analyzer" class="btn-small" target="_blank">GitHub</a>
+        <img src="images/psychological-app.png" alt="Psikolojik Uygulama" />
+        <h3>🧠 Psikolojik Mobil Uygulama</h3>
+        <p>Duygu analizi ve ruh hali takibi için Flutter tabanlı mobil uygulama.</p>
+        <a href="psychological.html" class="btn-small">Detaylar</a>
+        <a href="https://github.com/MustafaTekin48/psychological-mobile-application" class="btn-small" target="_blank">GitHub</a>
       </div>
+
       <div class="project-card glass-card">
-        <img src="images/cyber.png" alt="CyberSecurity Lab" />
-        <h3>🛡️ Cyber Security Mini Lab</h3>
-        <p>Temel ağ saldırıları (ARP Spoofing, Port Scanning) simülasyonu. Kali Linux + Python ile geliştirilmiştir.</p>
-        <a href="#" class="btn-small">Detaylar</a>
-        <a href="#" class="btn-small">Sunum</a>
+        <img src="images/marine4.png" alt="Marine App" />
+        <h3>🌊 Marine Saha Ekibi Uygulaması</h3>
+        <p>React Native ile geliştirilen konum ve görev takibi uygulaması.</p>
+        <a href="marine.html" class="btn-small">Detaylar</a>
+        <a href="https://github.com/MustafaTekin48/marine-field-app" class="btn-small" target="_blank">GitHub</a>
       </div>
+
       <div class="project-card glass-card">
-        <img src="images/sqlapp.png" alt="SQL Project" />
-        <h3>💾 Veritabanı Uygulaması</h3>
-        <p>MySQL ile geliştirilmiş, kullanıcı giriş yönetimi ve veri sorgulama işlevlerine sahip masaüstü uygulama.</p>
-        <a href="#" class="btn-small">Detaylar</a>
+        <img src="images/bank1.png" alt="Banka App" />
+        <h3>💳 Banka Uygulaması (Kumbara)</h3>
+        <p>Kişisel finans ve hedef takibi için geliştirilen kumbara uygulaması.</p>
+        <a href="bank.html" class="btn-small">Detaylar</a>
+        <a href="https://github.com/MustafaTekin48/bank-app" class="btn-small" target="_blank">GitHub</a>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="glass-card">
-    <h2><i class="fas fa-tools"></i> Becerilerim & İletişim</h2>
-    <div class="dual-section">
-      <div class="skills-block">
-        <h3><i class="fas fa-code"></i> Teknik Yetenekler</h3>
-        <ul class="skills-list">
-          <li><i class="fab fa-python"></i> Python</li>
-          <li><i class="fab fa-java"></i> Java</li>
-          <li><i class="fab fa-html5"></i> HTML</li>
-          <li><i class="fab fa-css3-alt"></i> CSS</li>
-          <li><i class="fab fa-js-square"></i> JavaScript</li>
-          <li><i class="fas fa-network-wired"></i> Wireshark & Scapy</li>
-          <li><i class="fas fa-database"></i> SQL</li>
-        </ul>
+  <section id="websites" class="glass-card">
+    <h2>🌐 Geliştirdiğim Web Siteleri</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/tekinsun3.png" alt="Tekinsun Sitesi" />
+        <h3>☀️ Tekinsun Güneş Enerjisi</h3>
+        <p>Kurumsal güneş enerjisi firması için WordPress tabanlı web sitesi.</p>
+        <a href="tekinsun.html" class="btn-small">Detaylar</a>
+        <a href="https://www.tekinsun.com.tr/" target="_blank" class="btn-small">Siteye Git</a>
       </div>
-
-      <div class="contact-block">
-        <h3><i class="fas fa-envelope"></i> İletişim</h3>
-        <form class="contact-form">
-          <input type="text" placeholder="Adınız" required />
-          <input type="email" placeholder="E-posta adresiniz" required />
-          <textarea placeholder="Mesajınız..." required></textarea>
-          <button type="submit">Gönder</button>
-        </form>
+      <div class="project-card">
+        <img src="images/lotse3.png" alt="Lotse Hukuk" />
+        <h3>⚖️ Lotse Hukuk Bürosu</h3>
+        <p>Profesyonel WordPress web tasarımıyla hukuk bürosu sitesi.</p>
+        <a href="lotse.html" class="btn-small">Detaylar</a>
+        <a href="https://lotsehukuk.com.tr/" target="_blank" class="btn-small">Siteye Git</a>
       </div>
     </div>
   </section>
+
+
+
+<!-- Yetenekler ve İletişim Bölümleri - Yan Yana Gösterim -->
+<div class="side-by-side">
+  
+<section id="skills" class="glass-card">
+  <h2><i class="fas fa-code"></i> Teknik Yetenekler</h2>
+
+  <div class="skill-group">
+    <h3>🌐 Web Geliştirme</h3>
+    <ul class="skills-list">
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/HTML" target="_blank"><i class="fab fa-html5"></i> HTML</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 75%;"><span>75%</span></div>
+        </div>
+      </li>
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/CSS" target="_blank"><i class="fab fa-css3-alt"></i> CSS</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 70%;"><span>70%</span></div>
+        </div>
+      </li>
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/JavaScript" target="_blank"><i class="fab fa-js-square"></i> JavaScript</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 75%;"><span>75%</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="skill-group">
+    <h3>📱 Mobil Geliştirme</h3>
+    <ul class="skills-list">
+      <li>
+        <a href="https://en.wikipedia.org/wiki/React_Native" target="_blank"><i class="fab fa-react"></i> React Native</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 75%;"><span>75%</span></div>
+        </div>
+      </li>
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/Flutter" target="_blank"><i class="fas fa-mobile-alt"></i> Flutter</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 70%;"><span>70%</span></div>
+        </div>
+      </li>
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/Dart_(programlama_dili)" target="_blank"><i class="fas fa-code"></i> Dart</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 65%;"><span>65%</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="skill-group">
+    <h3>🛠️ Araçlar</h3>
+    <ul class="skills-list">
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/Visual_Studio_Code" target="_blank"><i class="fas fa-terminal"></i> VS Code</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 80%;"><span>80%</span></div>
+        </div>
+      </li>
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/Git" target="_blank"><i class="fab fa-git-alt"></i> Git</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 65%;"><span>65%</span></div>
+        </div>
+      </li>
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/Android_Studio" target="_blank"><i class="fab fa-android"></i> Android Studio</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 65%;"><span>65%</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="skill-group">
+    <h3>🗄️ Diğer</h3>
+    <ul class="skills-list">
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/Firebase" target="_blank"><i class="fas fa-fire"></i> Firebase</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 50%;"><span>50%</span></div>
+        </div>
+      </li>
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/SQL" target="_blank"><i class="fas fa-database"></i> SQL</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 50%;"><span>50%</span></div>
+        </div>
+      </li>
+      <li>
+        <a href="https://tr.wikipedia.org/wiki/Kali_Linux" target="_blank"><i class="fab fa-linux"></i> Kali Linux</a>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 40%;"><span>40%</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- İletişim Bölümü -->
+  <section id="contact" class="glass-card">
+    <h2><i class="fas fa-envelope"></i> İletişim</h2>
+    <div class="feedback-note">
+      💬 Sayfamı geliştirmeye devam ediyorum! Aşağıdaki formu; öneri, görüş, yorum ya da sadece merhaba demek için kullanabilirsin. Geri bildirimin benim için çok değerli. 🙏
+    </div>
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/myzpdrje" method="POST">
+      <input type="text" name="name" placeholder="Adınız" required />
+      <input type="email" name="email" placeholder="E-posta adresiniz" required />
+      <textarea name="message" placeholder="Mesajınız..." rows="5" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+</div>
+
+
 
   <button id="toTop"><i class="fas fa-arrow-up"></i></button>
 
-<footer class="site-footer">
-  <div class="footer-social-horizontal">
-    <a href="mailto:mustafa.tekin2000@icloud.com">
-      <i class="fas fa-envelope"></i>
-      <span>mustafa.tekin2000@icloud.com</span>
-    </a>
-    <a href="https://www.linkedin.com/in/mustafatekinn" target="_blank">
-      <i class="fab fa-linkedin"></i>
-      <span>/mustafatekinn</span>
-    </a>
-    <a href="https://github.com/MustafaTekin48" target="_blank">
-      <i class="fab fa-github"></i>
-      <span>/MustafaTekin48</span>
-    </a>
-  </div>
-  <p>© 2025 Mustafa Tekin. Tüm hakları saklıdır</p>
-</footer>
+  <footer class="site-footer">
+    <p>© 2025 Mustafa Tekin. Tüm hakları saklıdır.</p>
+  </footer>
 
-
+  <script>
+    const form = document.getElementById("contactForm");
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        window.location.href = "tesekkur.html";
+      } else {
+        alert("Form gönderilirken bir hata oluştu.");
+      }
+    });
+  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lötse Hukuk | Web Sitesi</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    main {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 2rem;
+    }
+    .project-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .project-title {
+      flex: 1;
+    }
+    .project-title h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .project-animation {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #00bcd4;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      text-align: center;
+    }
+    .btn:hover {
+      background: #0097a7;
+    }
+    footer.site-footer {
+      text-align: center;
+      padding: 2rem 0 1rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="images/MT_logo.png" alt="Logo" class="logo-img" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="glass-card">
+    <div class="project-header">
+      <div class="project-title">
+        <h1>⚖️ Lotse Hukuk Web Sitesi</h1>
+        <p><strong>lotsehukuk.com.tr</strong> adresi için oluşturulmuş modern ve sade görünümlü bir kurumsal hukuk bürosu web sitesidir. Müvekkillere hizmet alanları, avukat tanıtımı ve iletişim gibi içerikler sunulmuştur.</p>
+      </div>
+      <div class="project-animation">
+        <lottie-player
+          src="animations/law-justice.json"
+          background="transparent"
+          speed="1"
+          style="width: 280px; height: 280px"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+    </div>
+
+    <h2>🔧 Kullanılan Teknolojiler</h2>
+    <ul>
+      <li>HTML / CSS</li>
+      <li>Responsive Design</li>
+      <li>WordPress CMS</li>
+    </ul>
+
+    <h2>🖼️ Ekran Görüntüleri</h2>
+    <div class="gallery">
+      <img src="images/lotse1.png" alt="Lötse Screenshot 1" />
+      <img src="images/lotse2.png" alt="Lötse Screenshot 2" />
+      <img src="images/lotse3.png" alt="Lötse Screenshot 3" />
+    </div>
+
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="https://www.lotsehukuk.com.tr/" target="_blank" class="btn">🌐 Web Sitesini Ziyaret Et</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Mustafa Tekin</p>
+  </footer>
+</body>
+</html>

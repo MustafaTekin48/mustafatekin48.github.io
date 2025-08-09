@@ -1,127 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tekin | Personal Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa Tekin | Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <link rel="stylesheet" href="../style.css">
-  <script defer src="../script.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <button id="mode-toggle"><i class="fas fa-moon"></i></button>
 
   <header>
     <nav>
       <div class="logo">
-        <img src="../images/MT_logo.png" alt="Logo" class="logo-img">
-      </div>
-      <ul>
+  <a href="index.html">
+    <img src="../images/MT_logo.png" alt="Logo" class="logo-img" />
+  </a>
+</div>
+
+   <button class="hamburger" id="hamburger-btn">☰</button>
+      <ul id="main-menu">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#websites">Websites</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
       <div class="language-selector">
         <div class="flags">
-          <img src="../images/turkey-flag.png" alt="Türkçe" class="flag" onclick="window.location.href='../index.html'">
-          <img src="../images/uk-flag.png" alt="English" class="flag" onclick="window.location.href='index.html'">
+          <img src="../images/turkey-flag.png" alt="Turkish" class="flag" onclick="window.location.href='../index.html'" />
+          <img src="../images/uk-flag.png" alt="English" class="flag" onclick="window.location.href='index.html'" />
         </div>
       </div>
     </nav>
   </header>
 
   <section id="hero">
+    <div id="particles-js"></div>
     <div class="hero-content">
-      <div class="hero-text">
-        <h1>Hello, I’m Tekin 👋</h1>
-        <p>I’m a Computer Engineering student. I love coding and creating things.</p>
-        <a href="#projects" class="btn">See my projects</a>
-      </div>
-      <lottie-player
-        src="https://assets9.lottiefiles.com/packages/lf20_kkflmtur.json"
-        background="transparent"
-        speed="1"
-        style="width: 300px; height: 300px"
-        loop
-        autoplay>
-      </lottie-player>
+    
+   <div class="hero-text">
+  <h1>Hello, I'm Mustafa Tekin 👋</h1>
+  <p>Computer Engineer | Software Developer | ERP Specialist</p>
+
+  <div class="hero-social-and-buttons">
+    <!-- Sosyal ikonlar -->
+    <div class="social-icons">
+      <a href="mailto:mustafa.tekin2000@icloud.com" target="_blank" title="E-mail">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mustafatekinn" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/MustafaTekin48" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
     </div>
-  </section>
 
-  <section id="about" class="glass-card">
-    <h2>About Me</h2>
-    <p>I’m learning HTML, CSS, and JavaScript. I’m practicing what I’ve learned on this site. I love web design and animations.</p>
-  </section>
+    <!-- CV Butonları -->
+    <div class="cv-buttons">
+      <a href="#projects" class="btn">View My Projects</a>
+      <a href="../assets/MustafaTekiningilizce.pdf" target="_blank" class="btn">View CV</a>
+      <a href="../assets/MustafaTekiningilizce.pdf" download class="btn">Download CV</a>
+    </div>
+  </div>
+</div>
 
-  <section id="projects">
-    <h2>My Projects</h2>
+
+    <!-- SAĞ: Animasyon -->
+    <lottie-player
+      src="https://assets9.lottiefiles.com/packages/lf20_kkflmtur.json"
+      background="transparent"
+      speed="1"
+      style="width: 400px; height: 400px"
+      loop
+      autoplay>
+    </lottie-player>
+
+  </div>
+</section>
+
+
+  <section id="about" class="glass-card about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h2><i class="fas fa-user-circle"></i> About Me</h2>
+      <p><i class="fas fa-user"></i> <strong>Mustafa Tekin</strong>, I was born on 17.02.2000 in Muğla, Turkey.</p>
+      <p><i class="fas fa-school"></i> I completed my high school education at Milas Final High School.</p>
+      <p><i class="fas fa-graduation-cap"></i> I graduated from Turkish Aeronautical Association University, Department of Computer Engineering.</p>
+      <p><i class="fas fa-laptop-code"></i> I'm interested in developing websites and mobile applications.</p>
+      <p><i class="fas fa-shield-alt"></i> I have knowledge in cybersecurity and work on it in my spare time.</p>
+      
+    </div>
+    <div class="about-image">
+      <img src="../images/about-me.png" alt="Mustafa Tekin" />
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div id="experience-particles"></div>
+  <h2 class="section-title">My Experience</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <h3>Yeniköy Kemerköy Electricity Generation Inc.</h3>
+        <p>IT Intern</p>
+        <a href="https://ykenerji.com.tr/" target="_blank">ykenerji.com.tr</a>
+      </div>
+      <div class="timeline-middle"></div>
+      <div class="timeline-right">
+        <p>July - August 2022</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <h3>Lenora Bilişim Systems</h3>
+        <p>Software Intern</p>
+        <a href="https://lenorabilisim.com/" target="_blank">lenorabilisim.com</a>
+      </div>
+      <div class="timeline-middle"></div>
+      <div class="timeline-right">
+        <p>June - July 2023</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <h3>Tersan Marine</h3>
+        <p>ERP Specialist</p>
+        <a href="https://tersanmarine.com/tr" target="_blank">tersanmarine.com/tr</a>
+      </div>
+      <div class="timeline-middle"></div>
+      <div class="timeline-right">
+        <p>June 2025 - Present</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card glass-card">
+      <img src="../images/psychological-app.png" alt="Psychological App" />
+      <h3>🧠 Psychological Mobile Application</h3>
+      <p>A Flutter-based mobile app for emotion analysis and mood tracking.</p>
+      <a href="psychological.html" class="btn-small">Details</a>
+      <a href="https://github.com/MustafaTekin48/psychological-mobile-application" class="btn-small" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card glass-card">
+      <img src="../images/marine4.png" alt="Marine App" />
+      <h3>🌊 Marine Field Team App</h3>
+      <p>A location and task tracking app developed with React Native for field teams.</p>
+      <a href="marine.html" class="btn-small">Details</a>
+      <a href="https://github.com/MustafaTekin48/marine-field-app" class="btn-small" target="_blank">GitHub</a>
+    </div>
+
+    <div class="project-card glass-card">
+      <img src="../images/bank1.png" alt="Bank App" />
+      <h3>💳 Bank Application</h3>
+      <p>A mobile piggy bank app for personal finance and goal tracking.</p>
+      <a href="bank.html" class="btn-small">Details</a>
+      <a href="https://github.com/MustafaTekin48/bank-app" class="btn-small" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
+
+
+  <section id="websites" class="glass-card">
+    <h2>🌐 Developed Websites</h2>
     <div class="project-grid">
-      <div class="project-card glass-card">
-        <img src="calculator.png" alt="Calculator">
-        <h3>🧮 Calculator</h3>
-        <p>A simple calculator with 4 operations created with HTML, CSS, and JavaScript.</p>
-        <a href="#" class="btn-small">Demo</a>
-        <a href="#" class="btn-small">Code</a>
+      <div class="project-card">
+        <img src="../images/tekinsun3.png" alt="Tekinsun Website" />
+        <h3>☀️ Tekinsun Solar Energy</h3>
+        <p>Corporate solar energy company website built with WordPress.</p>
+        <a href="tekinsun.html" class="btn-small">Details</a>
+        <a href="https://www.tekinsun.com.tr/" target="_blank" class="btn-small">Visit Site</a>
       </div>
-      <div class="project-card glass-card">
-        <img src="game.png" alt="Game">
-        <h3>🎮 Guessing Game</h3>
-        <p>A fun game where you need to guess a random number, created with JavaScript.</p>
-        <a href="#" class="btn-small">Demo</a>
-        <a href="#" class="btn-small">Code</a>
-      </div>
-      <div class="project-card glass-card">
-        <img src="todo.png" alt="To-do App">
-        <h3>📝 To-do List</h3>
-        <p>A task management app where you can add, delete, and mark tasks as done.</p>
-        <a href="#" class="btn-small">Demo</a>
-        <a href="#" class="btn-small">Code</a>
+      <div class="project-card">
+        <img src="../images/lotse3.png" alt="Lotse Law Website" />
+        <h3>⚖️ Lotse Law Firm</h3>
+        <p>Professional WordPress-based website design for a law firm.</p>
+        <a href="lotse.html" class="btn-small">Details</a>
+        <a href="https://lotsehukuk.com.tr/" target="_blank" class="btn-small">Visit Site</a>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="glass-card">
-    <h2>My Skills</h2>
-    <div class="skill">
-      <p>HTML</p>
-      <div class="progress"><div class="bar" style="width: 90%"></div></div>
-    </div>
-    <div class="skill">
-      <p>CSS</p>
-      <div class="progress"><div class="bar" style="width: 75%"></div></div>
-    </div>
-    <div class="skill">
-      <p>JavaScript</p>
-      <div class="progress"><div class="bar" style="width: 65%"></div></div>
-    </div>
-  </section>
+ <!-- Yetenekler ve İletişim Bölümleri - Yan Yana Gösterim -->
+<div class="side-by-side">
 
+<section id="skills" class="glass-card">
+  <h2><i class="fas fa-code"></i> Technical Skills</h2>
+
+  <div class="skill-group">
+    <h3>🌐 Web Development</h3>
+    <ul class="skills-list">
+      <li>
+        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><i class="fab fa-html5"></i> HTML</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 75%;"><span>75%</span></div></div>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><i class="fab fa-css3-alt"></i> CSS</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 70%;"><span>70%</span></div></div>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><i class="fab fa-js-square"></i> JavaScript</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 75%;"><span>75%</span></div></div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="skill-group">
+    <h3>📱 Mobile Development</h3>
+    <ul class="skills-list">
+      <li>
+        <a href="https://en.wikipedia.org/wiki/React_Native" target="_blank"><i class="fab fa-react"></i> React Native</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 75%;"><span>75%</span></div></div>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Flutter_(software)" target="_blank"><i class="fas fa-mobile-alt"></i> Flutter</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 70%;"><span>70%</span></div></div>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)" target="_blank"><i class="fas fa-code"></i> Dart</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 65%;"><span>65%</span></div></div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="skill-group">
+    <h3>🛠️ Tools</h3>
+    <ul class="skills-list">
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code" target="_blank"><i class="fas fa-terminal"></i> VS Code</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 80%;"><span>80%</span></div></div>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Git" target="_blank"><i class="fab fa-git-alt"></i> Git</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 65%;"><span>65%</span></div></div>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Android_Studio" target="_blank"><i class="fab fa-android"></i> Android Studio</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 65%;"><span>65%</span></div></div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="skill-group">
+    <h3>🗄️ Other</h3>
+    <ul class="skills-list">
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Firebase" target="_blank"><i class="fas fa-fire"></i> Firebase</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 50%;"><span>50%</span></div></div>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/SQL" target="_blank"><i class="fas fa-database"></i> SQL</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 50%;"><span>50%</span></div></div>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Kali_Linux" target="_blank"><i class="fab fa-linux"></i> Kali Linux</a>
+        <div class="skill-bar"><div class="skill-progress" style="width: 40%;"><span>40%</span></div></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
   <section id="contact" class="glass-card">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message..." required></textarea>
+    <h2><i class="fas fa-envelope"></i> Contact</h2>
+    <div class="feedback-note">
+      💬 I'm always looking to improve! Feel free to use the form below to share any suggestions, feedback, or just say hello. Your thoughts are always welcome. 🙏
+    </div>
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/myzpdrje" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message..." rows="5" required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
 
-  <div class="social-icons">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-  </div>
+</div>
+
+
 
   <button id="toTop"><i class="fas fa-arrow-up"></i></button>
 
-  <footer>
-    <p>© 2025 Tekin. All rights reserved</p>
+  <footer class="site-footer">
+    <p>© 2025 Mustafa Tekin. All rights reserved.</p>
   </footer>
 
+  <script>
+    const form = document.getElementById("contactForm");
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        window.location.href = "thankyou.html";
+      } else {
+        alert("An error occurred while submitting the form.");
+      }
+    });
+  </script>
+  <script src="../script.js"></script>
 </body>
 </html>
